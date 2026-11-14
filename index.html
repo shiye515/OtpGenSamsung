@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OtpGenSamsung</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        max-width: 640px;
+        margin: 40px auto;
+        padding: 0 16px;
+      }
+      form { display: grid; gap: 12px; }
+      label { display: grid; gap: 6px; }
+      input, button {
+        font: inherit;
+        padding: 8px;
+      }
+      #otp {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+        margin-top: 12px;
+      }
+      .hint { opacity: 0.8; }
+    </style>
+  </head>
+  <body>
+    <h1>OtpGenSamsung (6位动态码)</h1>
+    <p class="hint">输入时间和随机码（6位数字时会参与Nonce模式），生成6位OTP。</p>
+
+    <form id="otp-form">
+      <label>
+        时间
+        <input id="time-input" type="datetime-local" />
+      </label>
+
+      <label>
+        随机码
+        <input id="nonce-input" type="text" placeholder="例如 123456" />
+      </label>
+
+      <button type="submit">生成OTP</button>
+    </form>
+
+    <div id="otp">------</div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
