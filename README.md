@@ -4,7 +4,7 @@
 
 ## 来源说明
 
-出处 <copilot-ref kind="gist" target-id="https://gist.github.com/JaapBosheuvel/1e7e7ef8c02f6d6a4989ccfe330c38d6" label="Gist 1e7e7ef" />
+[出处](https://gist.github.com/JaapBosheuvel/1e7e7ef8c02f6d6a4989ccfe330c38d6" label="Gist 1e7e7ef)
 
 适用范围：
 
